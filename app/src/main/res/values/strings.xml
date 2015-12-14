@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Cebanc-Tortillas</string>
+    <string name="textView_nombre">Nombre</string>
+    <string name="textView_telefono">Telefono</string>
+    <string name="textView_direccion">Direccion</string>
+    <string name="person_name">Introduzca Su Nombre</string>
+    <string name="phone">Introduzca Telefono</string>
+    <string name="postal_address">Introduzca Su Direccion</string>
+    <string name="button_siguiente">Siguiente</string>
+    <string name="button_salir">Salir</string>
+    <string name="textView_tamañoTortilla">Tamaño</string>
+    <string name="textView_tipoTortilla">Tipo Tortilla</string>
+    <string name="textView_tipoHuevo">Tipo Huevo</string>
+    <string name="textView_cantidad">Cantidad</string>
+    <string name="editText_Cantidad">Introduce Cantidad</string>
+    <string name="buttonTortilla_SiguienteTortilla">Siguiente</string>
+    <string name="buttonSalirTortilla_SalirTortilla">Salir</string>
+</resources>

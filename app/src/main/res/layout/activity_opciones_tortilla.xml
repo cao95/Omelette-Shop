@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/textView_tamañoTortilla"
+        android:id="@+id/txtTamañoTortilla"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/textView_tipoTortilla"
+        android:id="@+id/txtTipo"
+        android:layout_marginTop="33dp"
+        android:layout_below="@+id/spinner_tipoHuevo"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/textView_tipoHuevo"
+        android:id="@+id/txtTipoHuevo"
+        android:layout_marginTop="59dp"
+        android:layout_below="@+id/txtTamañoTortilla"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/textView_cantidad"
+        android:id="@+id/txtCantidad"
+        android:layout_marginTop="76dp"
+        android:layout_below="@+id/txtTipo"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinner_tamaño"
+        android:layout_toRightOf="@+id/txtTipo"
+        android:layout_toEndOf="@+id/txtTipo"
+        android:spinnerMode="dropdown" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinner_tipoHuevo"
+        android:layout_alignTop="@+id/txtTipoHuevo"
+        android:layout_toRightOf="@+id/txtTipoHuevo"
+        android:layout_toEndOf="@+id/txtTipoHuevo"
+        android:spinnerMode="dropdown" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinner_tipoTortilla"
+        android:layout_alignTop="@+id/txtTipo"
+        android:layout_toRightOf="@+id/txtTipo"
+        android:layout_toEndOf="@+id/txtTipo"
+        android:spinnerMode="dropdown" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/editText_Cantidad"
+        android:layout_alignTop="@+id/txtCantidad"
+        android:layout_alignLeft="@+id/spinner_tipoTortilla"
+        android:layout_alignStart="@+id/spinner_tipoTortilla"
+        android:hint="@string/editText_Cantidad" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/buttonSalirTortilla_SalirTortilla"
+        android:id="@+id/btnSalir"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/buttonTortilla_SiguienteTortilla"
+        android:id="@+id/btnSiguiente"
+        android:layout_alignTop="@+id/btnSalir"
+        android:layout_alignRight="@+id/spinner_tipoTortilla"
+        android:layout_alignEnd="@+id/spinner_tipoTortilla" />
+
+</RelativeLayout>
