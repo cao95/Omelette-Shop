@@ -10,7 +10,7 @@ public class OpcionesTortilla extends AppCompatActivity {
     private Button siguiente;
     private Spinner tamaño;
     private Spinner tipoHuevo;
-    private Spinner tipoTortilla;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
