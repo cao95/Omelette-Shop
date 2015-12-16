@@ -17,6 +17,11 @@ public class OpcionesTortilla extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_opciones_tortilla);
 
+        salir=(Button)findViewById(R.id.btnSalir);
+        siguiente=(Button)findViewById(R.id.btnSiguiente);
+        tamaño=(Spinner)findViewById(R.id.spinner_tamaño);
+        tipoHuevo=(Spinner)findViewById(R.id.spinner_tipoHuevo);
+        tipoTortilla=(Spinner)findViewById(R.id.spinner_tipoTortilla);
     }
 }
 
