@@ -1,18 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Cebanc-Tortillas</string>
-    <string name="textView_nombre">Nombre</string>
-    <string name="textView_telefono">Telefono</string>
-    <string name="textView_direccion">Direccion</string>
+
+/////////////////////////PROPIEDAD HINT////////////////
     <string name="person_name">Introduzca Su Nombre</string>
     <string name="phone">Introduzca Telefono</string>
     <string name="postal_address">Introduzca Su Direccion</string>
+/////////////////////////BUTTON////////////////////////
+    <string name="button_sumarCocacola">+</string>
+    <string name="button_sumarLimon">+</string>
+    <string name="button_sumarNaranja">+</string>
+    <string name="button_restarCocaCola">-</string>
+    <string name="button_restarLimon">-</string>
+    <string name="button_RestarNaranja">-</string>
+    <string name="buttonTortilla_SiguienteTortilla">Siguiente</string>
+    <string name="buttonSalirTortilla_SalirTortilla">Atrás</string>
     <string name="button_siguiente">Siguiente</string>
     <string name="button_salir">Salir</string>
+    <string name="buttonRestar_nestea">-</string>
+    <string name="BotonCalcular">Calcular</string>
+    <string name="buttonAtras">Atrás</string>
+    <string name="buttonSalirAplicacion">Salir</string>
+    <string name="buttonReiniciarAplicacion">Reiniciar Proceso de pedido</string>
+    <string name="buttonSumar_Nestea">+</string>
+    <string name="button_RestarCerveza">-</string>
+    <string name="btnCalcularImporteTotal">Calcular Importe y Aceptar pedido:</string>
+    <string name="button_SumarCerveza">+</string>
+    <string name="button_RestarAgua">-</string>
+    <string name="button_SumarAgua">+</string>
+
+    /////////////////////////TEXTVIEW////////////////////////
+    <string name="txtCocacola">CocaCola 1,99E</string>
+    <string name="txtLimon">Limón 0,99E</string>
+    <string name="txtNaranja">Naranja 1,49E</string>
+    <string name="txtCantidadCocaCola" />
+    <string name="txtCantidadlimon" />
+    <string name="txtCantidadNaranja" />
+    <string name="textView_nombre">Nombre</string>
+    <string name="textView_telefono">Telefono</string>
+    <string name="textView_direccion">Direccion</string>
     <string name="textView_tamañoTortilla">Tamaño</string>
     <string name="textView_tipoTortilla">Tipo Tortilla</string>
     <string name="textView_tipoHuevo">Tipo Huevo</string>
     <string name="textView_cantidad">Cantidad</string>
+    <string name="txtPrecioBebidasFactura">PrecioBebidas</string>
+    <string name="txtPrecioBebidasFacturaFinal">Precio Bebidas</string>
+    <string name="txtCantidadTortillasFactura">Cantidad Tortillas</string>
+    <string name="txtPrecioTortillasFactura">Precio Tortillas</string>
+    <string name="textView_CantidadtotaldeBebidas">Cantidad total de bebidas:</string>
+    <string name="txtPreciototalbebidas">Precio total de las bebidas:</string>
+    <string name="txtCantidad_Nestea" />
+    <string name="txtCerveza">Cerveza 1,99E</string>
+    <string name="txtNestea">Nestea 3,99E</string>
+    <string name="txtNombreFactura">Nombre:</string>
+    <string name="txtDireccionFactura">Direccion:</string>
+    <string name="txtTelefonoFactura">Telefono:</string>
+    <string name="txtNombreRecogidoFactura" />
+    <string name="txtDireccionRecogida">Direccion Recogida</string>
+    <string name="txtBebidasCompradas">Bebidas Compradas:</string>
+    <string name="txtPrecioBebidas">Precio Bebidas:</string>
+    <string name="txtCantidadTortilla">Cantidad Tortillas:</string>
+    <string name="txtCantidadTortillas">Cantidad Tortillas:</string>
+    <string name="txtPrecioTortillas">Precio Tortillas:</string>
+    <string name="txtImporteTotal">Importe Total:</string>
+    <string name="txtCuantasBebidasCompradas">CantidadBebidas</string>
+    <string name="txtCantidadAgua" />
+    <string name="txtCantidadTotalBebidas" />
+    <string name="txtPrecioTotalBebidas" />
+    <string name="txtCantidadCerveza" />
+    <string name="txtprecioTotalTortillasElegidas">Precio Total:</string>
+    <string name="txtAgua">Agua 0,50E</string>
+
+/////////////////////////EDITTEXT////////////////////////
+    <string name="edittext_CantidadCocacola" />
+    <string name="edittext_CantidadLimon" />
+    <string name="edittext_CantidadNaranja" />
     <string name="editText_Cantidad">Introduce Cantidad</string>
-    <string name="buttonTortilla_SiguienteTortilla">Siguiente</string>
-    <string name="buttonSalirTortilla_SalirTortilla">Salir</string>
+    <string name="editText_Nombre" />
+    <string name="editText_Direccion" />
+    <string name="editText_Telefono" />
+    <string name="buttonbuscacliente">Buscar Cliente</string>
+    <string name="buttonMostrarPedido">Mostrar Pedido</string>
+
+    //////////////////////DATOS SPINNER///////////////////////////////
+    //////TAMAÑO/////
+    <string-array name="Tamaño">
+        <item>Individual 8,29€</item>
+        <item>Familiar 12,19€</item>
+        <item>Familiar Grande 22,99€</item>
+    </string-array>
+    //////TIPO HUEVOS/////
+    <string-array name="Tipo_Huevos">
+        <item>Granja 5,49€</item>
+        <item>Campero 3,39€</item>
+        <item>Ecológico 5,23€</item>
+    </string-array>
+    //////TIPO TORTILLA/////
+    <string-array name="Tipo_Tortilla">
+        <item>Patata 5,69€</item>
+        <item>Verduras 11,59€</item>
+        <item>Bacalao 19,29€</item>
+        <item>Jamón Ibérico 16,89€</item>
+        <item>Queso Idiazabal 10,19€</item>
+        <item>Hongos 12,79€</item>
+    </string-array>
 </resources>

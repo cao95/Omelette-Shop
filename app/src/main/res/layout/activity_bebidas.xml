@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button_sumarCocacola"
+        android:id="@+id/buttonCocacola"
+        android:layout_marginTop="28dp"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/txtCocaCola"
+        android:layout_toEndOf="@+id/txtCocaCola" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button_sumarLimon"
+        android:id="@+id/buttonLimon"
+        android:layout_below="@+id/buttonCocacola"
+        android:layout_toRightOf="@+id/txtCocaCola"
+        android:layout_toEndOf="@+id/txtCocaCola" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button_sumarNaranja"
+        android:id="@+id/buttonNaranja"
+        android:layout_below="@+id/buttonLimon"
+        android:layout_toLeftOf="@+id/txtCantidadNaranja"
+        android:layout_toStartOf="@+id/txtCantidadNaranja" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button_restarCocaCola"
+        android:id="@+id/buttonRestarCocacola"
+        android:layout_alignTop="@+id/buttonCocacola" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button_restarLimon"
+        android:id="@+id/buttonRestarLimon"
+        android:layout_alignTop="@+id/buttonLimon"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button_RestarNaranja"
+        android:id="@+id/buttonRestarNaranja"
+        android:layout_alignTop="@+id/buttonNaranja"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/txtCocacola"
+        android:id="@+id/txtCocaCola"
+        android:layout_gravity="center"
+        android:layout_alignBottom="@+id/buttonRestarCocacola"
+        android:layout_toRightOf="@+id/buttonRestarCocacola"
+        android:layout_toEndOf="@+id/buttonRestarCocacola" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/txtLimon"
+        android:id="@+id/textView"
+        android:layout_above="@+id/buttonNaranja"
+        android:layout_alignLeft="@+id/txtCocaCola"
+        android:layout_alignStart="@+id/txtCocaCola" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/txtNaranja"
+        android:id="@+id/textView2"
+        android:layout_alignBottom="@+id/buttonRestarNaranja"
+        android:layout_alignLeft="@+id/txtCocaCola"
+        android:layout_alignStart="@+id/txtCocaCola" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="0"
+        android:id="@+id/txtCantidadCocacola"
+        android:layout_alignBaseline="@+id/txtCocaCola"
+        android:layout_alignBottom="@+id/txtCocaCola"
+        android:layout_toRightOf="@+id/buttonCocacola"
+        android:layout_alignRight="@+id/txtCantidadLimon"
+        android:layout_alignEnd="@+id/txtCantidadLimon" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="0"
+        android:id="@+id/txtCantidadLimon"
+        android:layout_above="@+id/buttonNaranja"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toRightOf="@+id/buttonCocacola"
+        android:layout_toEndOf="@+id/buttonCocacola" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="0"
+        android:id="@+id/txtCantidadNaranja"
+        android:layout_alignBottom="@+id/buttonNaranja"
+        android:layout_toRightOf="@+id/buttonLimon"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/textView_CantidadtotaldeBebidas"
+        android:id="@+id/textView3"
+        android:layout_below="@+id/Calcular"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/txtPreciototalbebidas"
+        android:id="@+id/textView4"
+        android:layout_alignTop="@+id/textView3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="43dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/buttonRestar_nestea"
+        android:id="@+id/buttonRestarNestea"
+        android:layout_below="@+id/buttonRestarNaranja"
+        android:layout_alignRight="@+id/buttonRestarNaranja"
+        android:layout_alignEnd="@+id/buttonRestarNaranja" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/txtNestea"
+        android:id="@+id/textView5"
+        android:layout_alignBottom="@+id/buttonRestarNestea"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_alignStart="@+id/textView2" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/buttonSumar_Nestea"
+        android:id="@+id/buttonSumarnestea"
+        android:layout_above="@+id/buttonSumarcerveza"
+        android:layout_toRightOf="@+id/txtCocaCola"
+        android:layout_toEndOf="@+id/txtCocaCola" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="0"
+        android:id="@+id/txtCantidadNestea"
+        android:layout_alignBottom="@+id/buttonSumarnestea"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/buttonSumarnestea"
+        android:layout_toRightOf="@+id/buttonSumarnestea" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button_RestarCerveza"
+        android:id="@+id/buttonRestarcerveza"
+        android:layout_below="@+id/buttonRestarNestea"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/txtCerveza"
+        android:id="@+id/textView7"
+        android:layout_alignBottom="@+id/buttonRestarcerveza"
+        android:layout_alignLeft="@+id/textView5"
+        android:layout_alignStart="@+id/textView5" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button_SumarCerveza"
+        android:id="@+id/buttonSumarcerveza"
+        android:layout_alignBottom="@+id/textView7"
+        android:layout_alignLeft="@+id/buttonSumarnestea"
+        android:layout_alignStart="@+id/buttonSumarnestea"
+        android:layout_toLeftOf="@+id/txtCantidadNestea"
+        android:layout_toStartOf="@+id/txtCantidadNestea" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button_RestarAgua"
+        android:id="@+id/buttonRestaragua"
+        android:layout_below="@+id/buttonRestarcerveza" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="0"
+        android:id="@+id/txtCantidadCerveza"
+        android:layout_alignTop="@+id/textView7"
+        android:layout_toRightOf="@+id/buttonSumarcerveza"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/txtAgua"
+        android:id="@+id/textView9"
+        android:layout_alignBottom="@+id/buttonRestaragua"
+        android:layout_alignLeft="@+id/textView7"
+        android:layout_alignStart="@+id/textView7" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button_SumarAgua"
+        android:id="@+id/buttonSumaragua"
+        android:layout_below="@+id/buttonSumarcerveza"
+        android:layout_alignLeft="@+id/buttonSumarcerveza"
+        android:layout_alignStart="@+id/buttonSumarcerveza"
+        android:layout_toLeftOf="@+id/txtCantidadCerveza"
+        android:layout_toStartOf="@+id/txtCantidadCerveza" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="0"
+        android:id="@+id/txtCantidadAgua"
+        android:layout_alignTop="@+id/textView9"
+        android:layout_toRightOf="@+id/buttonSumaragua"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="0"
+        android:id="@+id/txtCantidadTotalBebidas"
+        android:layout_alignTop="@+id/textView3"
+        android:layout_toRightOf="@+id/textView4"
+        android:layout_alignRight="@+id/txtCantidadAgua"
+        android:layout_alignEnd="@+id/txtCantidadAgua" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="0"
+        android:id="@+id/txtCantidadtotaldinero"
+        android:layout_alignBottom="@+id/textView4"
+        android:layout_toRightOf="@+id/textView4"
+        android:layout_marginLeft="18dp"
+        android:layout_marginStart="18dp"
+        android:layout_alignRight="@+id/txtCantidadTotalBebidas"
+        android:layout_alignEnd="@+id/txtCantidadTotalBebidas" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/BotonCalcular"
+        android:id="@+id/Calcular"
+        android:layout_below="@+id/textView9"
+        android:layout_alignRight="@+id/textView5"
+        android:layout_alignEnd="@+id/textView5" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Siguiente"
+        android:id="@+id/btnSiguiente"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/buttonSumaragua"
+        android:layout_alignStart="@+id/buttonSumaragua" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/buttonAtras"
+        android:id="@+id/buttonAtras"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/Calcular"
+        android:layout_toStartOf="@+id/Calcular" />
+
+</RelativeLayout>
