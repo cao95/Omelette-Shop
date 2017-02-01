@@ -56,19 +56,6 @@
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:inputType="phone"
-        android:ems="10"
-        android:id="@+id/edtTelefono"
-        android:layout_alignTop="@+id/txtTelefono"
-        android:layout_alignLeft="@+id/edtNombre"
-        android:layout_alignStart="@+id/edtNombre"
-        android:maxLength="9"
-        android:hint="@string/phone"
-        android:text="@string/editText_Telefono" />
-
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:inputType="textPostalAddress"
         android:ems="10"
         android:id="@+id/edtDireccion"
@@ -102,7 +89,20 @@
         android:layout_height="wrap_content"
         android:text="@string/buttonbuscacliente"
         android:id="@+id/btnBuscarCliente"
+        android:layout_marginBottom="40dp"
         android:layout_above="@+id/btnSalir"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="40dp" />
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:ems="10"
+        android:id="@+id/edtTelefono"
+        android:maxLength="9"
+        android:hint="@string/phone"
+        android:text="@string/editText_Telefono"
+        android:layout_alignTop="@+id/txtTelefono"
+        android:layout_alignLeft="@+id/edtDireccion"
+        android:layout_alignStart="@+id/edtDireccion" />
 </RelativeLayout>
